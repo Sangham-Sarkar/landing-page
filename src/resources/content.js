@@ -14,14 +14,14 @@ const person = {
 };
 
 const newsletter = {
-  // display: true,
-  // title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  // description: (
-  //   <>
-  //     I occasionally write about design, technology, and share thoughts on the intersection of
-  //     creativity and engineering.
-  //   </>
-  // ),
+  display: false,
+  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  description: (
+    <>
+      I occasionally write about design, technology, and share thoughts on the intersection of
+      creativity and engineering.
+    </>
+  ),
 };
 
 const social = [
@@ -56,7 +56,7 @@ const home = {
   headline: <>Building bridges between design and code</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">Search Country</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
@@ -88,28 +88,32 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a creative problem-solver who loves turning ideas into fast,
+        responsive web experiences. From building clean UIs to writing smart backend logic, 
+        I thrive on learning, adapting, and creating meaningful digital products.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Cloud Application Developer",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Rooman Technologies",
+        timeframe: "Sep 2024 - Feb 2025",
+        role: "Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Completed 400+ hours of structured training as part of the NSDC initiative in collaboration with IBM and IIT Guwahati, 
+            focusing on Cloud Computing, Python, AWS, and professional development.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed and deployed web-based applications using Python, AWS, and MongoDB,
+            gaining hands-on experience in cloud infrastructure and backend development.
+          </>,
+          <>
+            Collaborated in a project-based learning environment, applying academic knowledge to real-world scenarios while strengthening teamwork, 
+            problem-solving, and technical communication skills.
           </>,
         ],
         images: [
@@ -121,22 +125,6 @@ const about = {
             height: 9,
           },
         ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
       },
     ],
   },
@@ -175,8 +163,20 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <>Building next gen apps with Next.js</>,
         // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "React",
+        description: <>Crafting dynamic, component-driven UIs with React</>,
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
@@ -188,15 +188,6 @@ const about = {
       },
     ],
   },
-};
-
-const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
@@ -259,4 +250,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, work, gallery };
