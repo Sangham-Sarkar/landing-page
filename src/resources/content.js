@@ -1,4 +1,5 @@
 import { Logo } from "@once-ui-system/core";
+import { title } from "process";
 
 const person = {
   firstName: "Sangham",
@@ -80,7 +81,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -96,12 +97,30 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Cloud Application Developer",
+    title: "Work Experience",
     experiences: [
+      {
+        company: "Sky Point",
+        timeframe: "July 2025 - Present",
+        role: "AI Data Curation and RLHF Intern",
+        achievements: [
+          <>
+            Engineered and maintained scalable data transformation pipelines using DBT and advanced SQL,
+            ensuring a reliable and efficient flow of data for model training and analytics.
+          </>,
+          <>
+            Contributed to projects on "Genie Space," 
+            the company's proprietary AI development platform, assisting in the management and versioning of large-scale 
+            training datasets.
+          </>,
+        ],
+        images: [
+        ],
+      },
       {
         company: "Rooman Technologies",
         timeframe: "Sep 2024 - Feb 2025",
-        role: "Intern",
+        role: "Cloud Application Developer Intern",
         achievements: [
           <>
             Completed 400+ hours of structured training as part of the NSDC initiative in collaboration with IBM and IIT Guwahati, 
@@ -117,15 +136,9 @@ const about = {
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
+      
     ],
   },
   studies: {
@@ -144,46 +157,20 @@ const about = {
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma.</>,
-        // optional: leave the array empty if you don't want to display images
+        description: <>Proficient in building high-fidelity, interactive prototypes in Figma to validate user experiences and accelerate developer handoff.</>,
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js</>,
-        // optional: leave the array empty if you don't want to display images
+        description: <>Architecting robust, full-stack solutions on the Next.js framework for modern user experiences.</>,
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
         title: "React",
-        description: <>Crafting dynamic, component-driven UIs with React</>,
+        // description: <>Crafting dynamic, component-driven UIs with React</>,
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },
     ],
