@@ -16,13 +16,13 @@ const person = {
 
 const newsletter = {
   display: false,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
+  // title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  // description: (
+    // <>
+    //   I occasionally write about design, technology, and share thoughts on the intersection of
+    //   creativity and engineering.
+    // </>
+  // ),
 };
 
 const social = [
@@ -36,11 +36,6 @@ const social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/in/sangham-sarkar",
   },
-  // {
-  //   name: "Threads",
-  //   icon: "threads",
-  //   link: "https://www.threads.com/@once_ui",
-  // },
   {
     name: "Email",
     icon: "email",
@@ -96,11 +91,11 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "Sky Point",
+        company: "SkyPoint",
         timeframe: "July 2025 - Present",
         role: "AI Data Curation and RLHF Intern",
         achievements: [
@@ -142,7 +137,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
@@ -152,7 +147,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
@@ -169,7 +164,7 @@ const about = {
       },
       {
         title: "React",
-        // description: <>Crafting dynamic, component-driven UIs with React</>,
+        description: <>Developing Dynamic and Component-Driven User Interfaces Using the React Framework</>,
         images: [
         ],
       },
