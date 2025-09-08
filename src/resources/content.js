@@ -52,8 +52,8 @@ const home = {
   headline: <>Building bridges between design and code</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Search Country</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">Connect 4</strong></>,
+    href: "/work/connect-4",
   },
   subline: (
     <>
